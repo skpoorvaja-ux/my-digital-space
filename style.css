@@ -1,0 +1,248 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0B1B35;
+    color: #F1F5F9;
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #102746;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: #60A5FA;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #DBEAFE;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #60A5FA;
+}
+
+/* Home Section */
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+}
+
+.home-content {
+    max-width: 750px;
+}
+
+.intro {
+    color: #60A5FA;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.home h2 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.home h2 span,
+.heading span {
+    color: #60A5FA;
+}
+
+.home h3 {
+    font-size: 27px;
+    color: #93C5FD;
+    margin-bottom: 20px;
+}
+
+.home p {
+    line-height: 1.8;
+    color: #CBD5E1;
+    font-size: 17px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 28px;
+    background: #2563EB;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #60A5FA;
+    transform: translateY(-3px);
+}
+
+/* Common Section Styling */
+section {
+    padding: 80px 10%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+/* About Section */
+.about-content {
+    background: #142D4E;
+    padding: 35px;
+    border-radius: 15px;
+    border: 1px solid #2563EB;
+}
+
+.about-content p {
+    color: #CBD5E1;
+    line-height: 2;
+    font-size: 17px;
+}
+
+/* Education Section */
+.education-box {
+    background: #142D4E;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid #60A5FA;
+}
+
+.education-box h3 {
+    color: #60A5FA;
+    margin-bottom: 18px;
+}
+
+.education-box p {
+    line-height: 2;
+    color: #CBD5E1;
+}
+
+/* Skills Section */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.skill-box {
+    background: #142D4E;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid #1E40AF;
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    transform: translateY(-8px);
+    border-color: #60A5FA;
+}
+
+.skill-box h3 {
+    color: #60A5FA;
+    margin-bottom: 12px;
+}
+
+.skill-box p {
+    color: #CBD5E1;
+}
+
+/* Projects Section */
+.project-box {
+    background: #142D4E;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #2563EB;
+    line-height: 1.8;
+}
+
+.project-box h3 {
+    color: #60A5FA;
+    margin-bottom: 15px;
+}
+
+.project-box p {
+    color: #CBD5E1;
+}
+
+.status {
+    color: #60A5FA !important;
+    margin-top: 15px;
+}
+
+/* Contact Section */
+.contact-content {
+    text-align: center;
+    background: #142D4E;
+    padding: 35px;
+    border-radius: 15px;
+    line-height: 2.2;
+    color: #CBD5E1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #102746;
+    padding: 25px;
+    color: #93C5FD;
+    line-height: 2;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .home h2 {
+        font-size: 38px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+}
